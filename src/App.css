@@ -1,38 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+html,
+body {
+  background-image: url("./Images/background1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Shadows Into Light";
+  font-size: 16px;
+  /* opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+ 
+  z-index: -1; */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row-reverse;
 }
 
-.App-link {
-  color: #61dafb;
+#navLogo {
+  width: 6em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#iconsContainer {
+  /* padding-left: 3.5em; */
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+/* #profile,
+#fullName {
+  position: relative;
+} */
+#profile {
+  background-color: hsla(0, 0%, 25%, 0.7);
+  /* padding: 0 5rem 4rem 5rem; */
+}
+
+#imageDetails {
+  display: inline-block;
+  position: relative;
+  height: 23em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid;
+  border-color: #56ace0;
+  padding: 0.5em;
+  /* cursor: pointer; */
+}
+
+#fullName {
+  width: 30rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.textContainer {
+  font-size: 1em;
+  color: "#f4f4f4";
+}
+.nameTitleImage {
+  width: 30em;
+  display: block;
+  align-self: center;
+  padding: 0;
+}
+@media only screen and (max-widht: 450px) {
 }
