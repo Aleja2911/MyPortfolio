@@ -1,10 +1,12 @@
 import React, { Fragment } from "react";
 import './App.css';
+
 import Navbar from './Components/navBar/navbar';
 import TopIcons from './Components/topIconsFol/topIcons';
 import Profile from './Components/profileFol/profile';
+import Projects from './Components/projectsFol/projects';
 
-import { Grid } from '@material-ui/core';
+
 import { makeStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
@@ -24,8 +26,8 @@ function App() {
      <Navbar />
         <TopIcons />   
        <Profile />
-        <h2> Projects </h2> 
- 
+        <h2 style={{display: "flex", justifyContent: "center", marginTop: "3em"}}> Projects </h2> 
+        <Projects />
     </Fragment>
   );
 }
