@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid } from '@material-ui/core';
+import { Grid, Link } from '@material-ui/core';
+
 
 import IconButton from '@material-ui/core/IconButton';
 import MailIcon from '@material-ui/icons/Mail';
@@ -15,6 +16,8 @@ const useStyles =  makeStyles({
 
 const ContactNavbar = () => {
     const classes = useStyles()
+    const gitHubLink = 'https://github.com/Aleja2911';
+    const linkedinLink = 'https://www.linkedin.com/in/alejandra-ossa-jimenez/';
 
     return (
         <Grid container
@@ -23,13 +26,19 @@ const ContactNavbar = () => {
         alignItems="center"
         >
         <IconButton >
+            <Link href='mailto: alejandra.ossa.jimenez@gmail.com'>
             <MailIcon className={classes.icons}/>
+            </Link>
         </IconButton>   
         <IconButton>   
+            <Link href={gitHubLink} rel='noopener noreferrer' target='_blank'>
             <GitHubIcon />
+            </Link>
         </IconButton>
         <IconButton >
+            <Link href={linkedinLink} rel='noopener noreferrer' target='_blank'>
             <LinkedInIcon />
+            </Link>
         </IconButton>
         </Grid>
         

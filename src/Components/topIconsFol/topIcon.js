@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme =>({
     
    },
    media: {
-    height: "5.5em",
+    height: "4em",
     alignItems: "center",
     objectFit: "scale-down",
     [theme.breakpoints.down("xs")] : {

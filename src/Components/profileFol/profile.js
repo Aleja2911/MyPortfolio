@@ -1,9 +1,9 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
+import React from "react";
+import { Grid } from "@material-ui/core";
 
-import ProfilePhoto from './ProfilePhoto';
+import ProfilePhoto from "./ProfilePhoto";
 // import logoImg from '../Images/A2.svg';
-import ProfileCardSlide from './profileCardSlide';
+import ProfileCardSlide from "./profileCardSlide";
 
 const Profile = () => {
   return (
@@ -14,16 +14,17 @@ const Profile = () => {
       justify="center"
       alignItems="center"
       id="profile"
-      style={{  paddingTop: '3em', paddingBottom: '3em' }}
+      style={{ paddingTop: "1em", paddingBottom: "3em" }}
     >
-    
-       <Grid item sx={12} sm={6}>
+      <Grid item sm={1}></Grid>
+      <Grid item sx={12} sm={5}>
         <ProfilePhoto />
       </Grid>
-      <Grid  style={{padding: 0}} item sm={5}>   
-          <ProfileCardSlide />
-      </Grid> 
+      <Grid style={{ padding: 0 }} item sm={4}>
+        <ProfileCardSlide />
       </Grid>
+      <Grid item sm={1}></Grid>
+    </Grid>
   );
 };
 
